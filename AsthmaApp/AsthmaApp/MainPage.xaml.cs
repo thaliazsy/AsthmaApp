@@ -14,5 +14,39 @@ namespace AsthmaApp
         {
             InitializeComponent();
         }
+        private void OnButtonClicked(object sender, EventArgs args)
+        {
+            ImageButton sen = (ImageButton)sender;
+            if (sen == sen.FindByName("btn_education"))
+            {
+                var page = new NavigationPage(new HealthEducation());
+                Navigation.PushModalAsync(page);
+            }
+            else if (sen == sen.FindByName("btn_therapy"))
+            {
+                var page = new NavigationPage(new Rehabilitation());
+                Navigation.PushModalAsync(page);
+            }
+            else if (sen == sen.FindByName("btn_decision"))
+            {
+                var page = new NavigationPage(new SharedDecisionMaking());
+                Navigation.PushModalAsync(page);
+            }
+            else if (sen == sen.FindByName("btn_drug"))
+            {
+                var page = new NavigationPage(new Drug());
+                Navigation.PushModalAsync(page);
+            }
+            else if (sen == sen.FindByName("btn_selfAsses"))
+            {
+                var page = new NavigationPage(new SelfAssesment());
+                Navigation.PushModalAsync(page);
+            }
+            else if (sen == sen.FindByName("btn_qa"))
+            {
+                var page = new NavigationPage(new QuestionAnswer());
+                Navigation.PushModalAsync(page);
+            }
+        }
     }
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JPfTR42ya4jkAcdj0oOG+KfQJ6xO/ZqUUNMuUzaFwTjwCUF3rNqY+3hJHQ/6HVq7F87O6Y0xQFZgQigmQReHFA==",
+  "dgSpecHash": "eurESPm3onWSaZ6RmK+g1hZyULF282964EVTnMesH753BMSHho2q1y7FhGLKMzadSAUBRRMtyAcqIXV2NFMqlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\thali\\source\\repos\\AsthmaApp\\AsthmaApp\\AsthmaApp.iOS\\AsthmaApp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\thali\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\thali\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Users\\thali\\.nuget\\packages\\xamarin.forms\\4.8.0.1821\\xamarin.forms.4.8.0.1821.nupkg.sha512"
   ],
   "logs": []
 }
