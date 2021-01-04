@@ -42,7 +42,7 @@ namespace AsthmaApp
                 var page = new NavigationPage(new SelfAssesment());
                 Navigation.PushModalAsync(page);
             }
-            else if (sen == sen.FindByName("btn_qa"))
+            else if (sen == sen.FindByName("btn_qna"))
             {
                 var page = new NavigationPage(new QuestionAnswer());
                 Navigation.PushModalAsync(page);

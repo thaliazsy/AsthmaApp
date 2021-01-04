@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="AsthmaApp.Answers" BackgroundColor="LightGoldenrodYellow">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Order="Primary" Icon="home.png" Text="Home" Priority="0" Activated="Home_Activated"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30" Spacing="30">
+                <yummy:PancakeView
+				        Padding="10"
+                        BackgroundColor="White"
+				        CornerRadius="15"
+                        Border="{yummy:BorderMarkup Color=#ffffff, Thickness='1'}"
+                        Shadow="{yummy:ShadowMarkup Color=#000000}">
+                    <StackLayout>
+                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                               FontSize="25" Text="Q：" />
+                        <Label x:Name="header" 
+                               FontAttributes="Bold"
+                               FontSize="25"
+                               HorizontalOptions="CenterAndExpand"
+                               HorizontalTextAlignment="Center"
+                               Text=""
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView
+				        Padding="10"
+                        BackgroundColor="White"
+				        CornerRadius="15"
+                        Border="{yummy:BorderMarkup Color=#ffffff, Thickness='1'}"
+                        Shadow="{yummy:ShadowMarkup Color=#000000}">
+                    <StackLayout>
+                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                               FontSize="25" Text="A：" />
+                        <Label x:Name="textContent" 
+                               FontSize="25"
+                               HorizontalOptions="CenterAndExpand"
+                               HorizontalTextAlignment="Start"
+                               Text=""
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView
+				        Padding="10"
+                        BackgroundColor="White"
+				        CornerRadius="15"
+                        Border="{yummy:BorderMarkup Color=#ffffff, Thickness='1'}"
+                        Shadow="{yummy:ShadowMarkup Color=#000000}">
+                    <StackLayout>
+                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                               Text="來源：" />
+                        <Label x:Name="textSource" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="CenterAndExpand"
+                               HorizontalTextAlignment="Center"
+                               Text="台灣胸腔暨重症加護醫學會"
+                               TextColor="Black"
+                               VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </yummy:PancakeView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

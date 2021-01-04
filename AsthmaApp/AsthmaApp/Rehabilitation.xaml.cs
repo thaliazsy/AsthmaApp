@@ -16,5 +16,13 @@ namespace AsthmaApp
         {
             InitializeComponent();
         }
+        private void Home_Activated(object sender, EventArgs e)
+        {
+            foreach (Page page in Navigation.ModalStack)
+            {
+                Navigation.PopModalAsync();
+            }
+
+        }
     }
 }
