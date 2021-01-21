@@ -39,15 +39,15 @@
                     </StackLayout.Resources>
                     <PanCake:PancakeView Grid.Row="1" CornerRadius="0,90,0,0">
                         <Grid RowDefinitions="Auto,Auto,Auto,Auto" VerticalOptions="Center" ColumnDefinitions="*, *" RowSpacing="0" Padding="15,50,15,10" BackgroundColor="LightSalmon">
-                            <ImageButton Grid.Row="0" Grid.Column="0" x:Name="q1" Clicked="OnButtonClicked" Source="q1" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="0" Grid.Column="1" x:Name="q2" Clicked="OnButtonClicked" Source="q2" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="1" Grid.Column="0" x:Name="q3" Clicked="OnButtonClicked" Source="q3" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="1" Grid.Column="1" x:Name="q4" Clicked="OnButtonClicked" Source="q4" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="2" Grid.Column="0" x:Name="q5" Clicked="OnButtonClicked" Source="q5" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="2" Grid.Column="1" x:Name="q6" Clicked="OnButtonClicked" Source="q6" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="3" Grid.Column="0" x:Name="q7" Clicked="OnButtonClicked" Source="q7" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="3" Grid.Column="1" x:Name="q8" Clicked="OnButtonClicked" Source="q8" VerticalOptions="CenterAndExpand" />
-                            <ImageButton Grid.Row="4" Grid.Column="0" x:Name="q9" Clicked="OnButtonClicked" Source="q9" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="0" Grid.Column="0" x:Name="q1" Clicked="OnButtonClicked" CommandParameter="0" Source="q1" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="0" Grid.Column="1" x:Name="q2" Clicked="OnButtonClicked" CommandParameter="1" Source="q2" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="1" Grid.Column="0" x:Name="q3" Clicked="OnButtonClicked" CommandParameter="2" Source="q3" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="1" Grid.Column="1" x:Name="q4" Clicked="OnButtonClicked" CommandParameter="3" Source="q4" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="2" Grid.Column="0" x:Name="q5" Clicked="OnButtonClicked" CommandParameter="4" Source="q5" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="2" Grid.Column="1" x:Name="q6" Clicked="OnButtonClicked" CommandParameter="5" Source="q6" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="3" Grid.Column="0" x:Name="q7" Clicked="OnButtonClicked" CommandParameter="6" Source="q7" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="3" Grid.Column="1" x:Name="q8" Clicked="OnButtonClicked" CommandParameter="7" Source="q8" VerticalOptions="CenterAndExpand" />
+                            <ImageButton Grid.Row="4" Grid.Column="0" x:Name="q9" Clicked="OnButtonClicked" CommandParameter="8" Source="q9" VerticalOptions="CenterAndExpand" />
                         </Grid>
                     </PanCake:PancakeView>
                 </StackLayout>

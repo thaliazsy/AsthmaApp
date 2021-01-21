@@ -21,54 +21,9 @@ namespace AsthmaApp
         private void OnButtonClicked(object sender, EventArgs e)
         {
             ImageButton sen = (ImageButton)sender;
-            int question = 0;
-
-            if (sen == sen.FindByName("q1"))
-            {
-                question = 1;
-            }
-            else if(sen == sen.FindByName("q2"))
-            {
-                question = 2;
-            }
-            else if (sen == sen.FindByName("q3"))
-            {
-                question = 3;
-            }
-            else if (sen == sen.FindByName("q4"))
-            {
-                question = 4;
-            }
-            else if (sen == sen.FindByName("q5"))
-            {
-                question = 5;
-            }
-            else if (sen == sen.FindByName("q6"))
-            {
-                question = 6;
-            }
-            else if (sen == sen.FindByName("q7"))
-            {
-                question = 7;
-            }
-            else if (sen == sen.FindByName("q8"))
-            {
-                question = 8;
-            }
-            else if (sen == sen.FindByName("q9"))
-            {
-                question = 9;
-            }
-            else if (sen == sen.FindByName("q10"))
-            {
-                question = 10;
-            }
-            else if (sen == sen.FindByName("q11"))
-            {
-                question = 11;
-            }
-
-            var page = new NavigationPage(new Answers(question));
+            int index;
+            int.TryParse(sen.CommandParameter.ToString(), out index);
+            var page = new NavigationPage(new Answers(index));
             Navigation.PushModalAsync(page);
         }
 
